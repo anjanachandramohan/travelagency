@@ -1,0 +1,561 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html" id="logo"><span>Tra</span>verse</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#packages">Packages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#destination">Destinations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+                
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- navbar end -->
+
+   <!-- home start -->
+    <div class="home-section">
+      
+        <!-- slides -->
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+
+              <div class="content-home img-2">
+                <div class="text-content-home">
+
+                  
+                  
+                  <h3 class="section-title  mb-3">Let Us Take You To Your</h3>
+                  <h1 class="heading-home text-white mb-4">Dream Destination</h1>
+                  <!--<a href="#" class="btn btn-home-content py-md-3 px-md-5 me-3">Discover Now</a>-->
+                  <a href="#" class="btn-home">Sign In</a>
+               
+                </div>
+              </div>
+
+           </div>
+            <div class="carousel-item">
+              <div class="content-home img-1">
+                <div class="text-content-home">
+                  
+                  <h3 class="section-title  mb-3">Explore the World</h3>
+                  <h1 class="heading-home text-white mb-4">Book Your Adventure</h1>
+                  <!--<a href="#" class="btn btn-home-content py-md-3 px-md-5 me-3">Discover Now</a>-->
+                  <a href="#" class="btn-home">Sign In</a>
+               
+                  </div>
+              </div>
+              </div>
+            
+        
+        </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="slider-icon"><i class="fa-solid  fa-arrow-left"></i></span> 
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="slider-icon"><i class="fa-solid  fa-arrow-right"></i></span> 
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      
+  
+  <!-- home end -->
+
+<!-- box start -->
+ <div class="hotel-search-form-container container">
+  <div class="hotel-search-form-content">
+    <div class="container-fluid">
+      <div class="hotel-search-form">
+
+        <form action="">
+          <div class="container">
+            <div class="row container-form">
+              <div class="col-lg-3 col-6 my-2">
+                <label for="check-in">Check In</label>
+                <input type="date" class="input-form" id="check-in">
+              </div>
+              <div class="col-lg-3 col-6 my-2">
+                <label for="check-out">Check Out</label>
+                <input type="date" class="input-form" id="check-out">
+              </div>
+              <div class="col-lg-3 col-10 my-2">
+                <label for="place">Place</label>
+                <input type="text" class="input-form" id="place" placeholder="where to go?">
+              </div> 
+              <div class="col-lg-1 col-2 my-2">
+                <label for="rooms">Rooms</label>
+                <select name="" class="input-form" id="rooms">
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  </select>
+              </div> 
+
+              <div class="col-lg-2 col-12 my-2">
+                <label for="availability">Availability</label>
+                <button type="submit" class="input-btn-submit">Check Availability</button>
+              </div> 
+
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+ </div>
+  <!-- box end -->
+ 
+  <!-- about start -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="about-content">
+            <h6 class="about-title">ABOUT US</h6>
+            <h2 class="heading-about">Welcome to <br>Traverse Hotel Luxury</h2>
+            <p class="para-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae illum a hic sapiente ipsa tenetur voluptas fugit commodi asperiores iusto, doloribus ut veritatis voluptatibus laudantium pariatur quas. </p>
+            <h4 class="heading1">Manager: <span>Alice Christy</span></h4>
+
+          <div class="about-items">
+            <div class="row mt-4">
+              <div class="col-4">
+                <div class="border rounded p-1">
+                  <div class="border rounded text-center py-2">
+                    <p class="about-items-icon"><i class="fa-solid fa-hotel"></i></p>
+                    <h5 class="about-items-heading">1600</h5>
+                    <p class="about-items-para">Rooms</p>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-4">
+                <div class="border rounded p-1">
+                  <div class="border rounded text-center py-2">
+                    <p class="about-items-icon"><i class="fa-solid fa-hotel"></i></p>
+                    <h5 class="about-items-heading">3000</h5>
+                    <p class="about-items-para">Clients</p>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-4">
+                <div class="border rounded p-1">
+                  <div class="border rounded text-center py-2">
+                    <p class="about-items-icon"><i class="fa-solid fa-hotel"></i></p>
+                    <h5 class="about-items-heading">92</h5>
+                    <p class="about-items-para">Hotels</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+           <a href="#" class="btn-content">View Details</a>
+
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="images-container">
+            <div class="row p-2">
+              <div class="col-lg-6 col-6">
+                <div class="images-container1">
+                  <div class="img-hotel1"></div>
+                </div>
+              </div>
+             
+              <div class="col-lg-6 col-6">
+                <div class="images-container1">
+                  <div class="img-hotel2"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row p-2">
+              <div class="col-lg-6 col-6">
+                <div class="images-container1">
+                  <div class="img-hotel3"></div>
+                </div>
+              </div>
+
+              
+                <div class="col-lg-6 col-6">
+                  <div class="images-container1">
+                    <div class="img-hotel4"></div>
+                  </div>
+                </div>
+
+              </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- about end -->
+  <!-- packages start -->
+  <section class="packages" id="packages">
+    <div class="container">
+        <div class="main-txt">
+            <h1>Packages</h1>
+        </div>
+        <div class="row" style="margin-top:30px">
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="./images/travel5.jpg" alt="">
+                    <div class="card-body">
+                        <h3>United Kingdom</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus eos suscipit mollitia. Minima numquam fugiat officia unde neque.</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h6>Price: <strong>Rs 20,000</strong></h6>
+                        <a href="#book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="./images/travel6.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Malaysia</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus eos suscipit mollitia. Minima numquam fugiat officia unde neque.</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star "></i>
+                            </div>
+                            <h6>Price: <strong>Rs 10,000</strong></h6>
+                            <a href="#book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                    <div class="col-md-4 py-3 py-md-0">
+                        <div class="card">
+                            <img src="./images/travel7.jpg" alt="">
+                            <div class="card-body">
+                                <h3>Singapore</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus eos suscipit mollitia. Minima numquam fugiat officia unde neque.</p>
+                                <div class="star">
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star "></i>
+                                    <i class="fa-solid fa-star "></i>
+                                </div>
+                                <h6>Price: <strong>Rs 20,000</strong></h6>
+                                <a href="#book">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                  
+                
+        </div>
+         <div class="row" style="margin-top:30px"> 
+          <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                  <img src="./images/travel8.jpg" alt="">
+                  <div class="card-body">
+                      <h3>Russia</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus eos suscipit mollitia. Minima numquam fugiat officia unde neque.</p>
+                      <div class="star">
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star"></i>
+                      </div>
+                      <h6>Price: <strong>Rs 30,000</strong></h6>
+                      <a href="#book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+          
+              <div class="col-md-4 py-3 py-md-0">
+                  <div class="card">
+                      <img src="./images/travel9.jpg" alt="">
+                      <div class="card-body">
+                          <h3>Thailand</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus eos suscipit mollitia. Minima numquam fugiat officia unde neque.</p>
+                          <div class="star">
+                              <i class="fa-solid fa-star checked"></i>
+                              <i class="fa-solid fa-star checked"></i>
+                              <i class="fa-solid fa-star checked"></i>
+                              <i class="fa-solid fa-star checked"></i>
+                              <i class="fa-solid fa-star "></i>
+                          </div>
+                          <h6>Price: <strong>Rs 15,000</strong></h6>
+                          <a href="#book">Book Now</a>
+                      </div>
+                  </div>
+              </div>
+              
+                  <div class="col-md-4 py-3 py-md-0">
+                      <div class="card">
+                          <img src="./images/travel10.jpg" alt="">
+                          <div class="card-body">
+                              <h3>Dubai</h3>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus eos suscipit mollitia. Minima numquam fugiat officia unde neque.</p>
+                              <div class="star">
+                                  <i class="fa-solid fa-star checked"></i>
+                                  <i class="fa-solid fa-star checked"></i>
+                                  <i class="fa-solid fa-star checked"></i>
+                                  <i class="fa-solid fa-star checked"></i>
+                                  <i class="fa-solid fa-star "></i>
+                              </div>
+                              <h6>Price: <strong>Rs 20,000</strong></h6>
+                              <a href="#book">Book Now</a>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+
+
+
+
+        </div>
+</section>
+<!-- packages end -->
+
+<!-- services start -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="main-txt">
+      <h1>Services</h1>
+    </div>
+    <div class="row" style="margin-top: 30px;">
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <i class="fa-solid fa-person-hiking"></i>
+          <div class="card-body">
+            <h3>Active Adventure</h3>
+            <p>Hiking</p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <i class="fa-solid fa-ship"></i>
+          <div class="card-body">
+            <h3>Cruise</h3>
+            <p>Unwind</p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <i class="fa-brands fa-wpexplorer"></i>
+          <div class="card-body">
+            <h3>Free & Easy</h3>
+            <p>Explore</p>
+            
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+</section>
+<!-- services end -->
+<!-- destination start -->
+   <section class="destination">
+    <h3 class="section-heading display-6">Popular Destination in 2023</h3>
+    <p class="section-para"><span>TAKE A LOOK</span>  AT THESE OFFERS</p>
+
+    <div class="container">
+      <div class="row m-lg-5 my-">
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="content-destination image-1">
+           <div class="content-text-place">
+            <a href="" class="button">Maldives</a>
+           </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="content-destination image-2">
+                      <div class="content-text-place">
+              <h3 class="place-heading">Australia</h3>
+              <p class="place-para">Australia is a beauiful holiday destination with its sparkling beaches,friendly wildlife and natural wonders</p>
+              <a href="" class="button">Discover Australia  ></a>
+             </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="content-destination image-3">
+            <div class="content-text-place">
+              <a href="" class="button">Canada</a>
+             </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="content-destination image-4">
+            <div class="content-text-place">
+              <a href="" class="button">France</a>
+             </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="content-destination image-5">
+            <div class="content-text-place">
+              <a href="" class="button">Switzerland</a>
+             </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="content-destination image-6">
+            <div class="content-text-place">
+              <a href="" class="button">Poland</a>
+             </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="content-destination image-7">
+            <div class="content-text-place">
+              <h3 class="place-heading">Korea</h3>
+              <p class="place-para">Korea is a great holiday destination for all types of travellers</p>
+              <a href="" class="button">Discover Korea ></a>
+             </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="content-destination image-8">
+            <div class="content-text-place">
+              <a href="" class="button">Turkey</a>
+             </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+   </section>
+   <!-- destination end -->
+ 
+    <footer>
+      <div class="footer-container" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <h3 class="heading-logo footer-logo"><span>Tra</span>verse</h3>
+           <p class="footer-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia</p>
+
+           <h5 class="heading-sm-footer">FOLLOW US</h5>
+           <div class="social-links-footer">
+            <i class="fa-brands icon-social-footer fa-facebook"></i>
+            <i class="fa-brands icon-social-footer fa-snapchat"></i>
+            <i class="fa-brands icon-social-footer fa-whatsapp"></i>
+            <i class="fa-brands icon-social-footer fa-instagram"></i>
+            <i class="fa-brands icon-social-footer fa-linkedin"></i>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="pages-footer">
+            <h3 class="heading-pages">Pages Links</h3>
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link footer-links" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link footer-links" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link footer-links" href="#packages">Packages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link footer-links" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link footer-links" href="#destination">Destinations</a>
+              </li>
+              </ul>
+          </div>
+      </div>
+          
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <h3 class="heading-pages">Contact Us</h3>
+        <p class="contact-footer">
+          <span class="text-contact"><i class="fa-solid footer-icons fa-location-dot"></i>No:40,sky building,kerala</span>
+          <span class="text-contact"><i class="fa-solid footer-icons fa-envelope"></i>traverse@gmail.com</span>
+          <span class="text-contact"><i class="fa-solid footer-icons fa-phone"></i>+012-1234 5687</span>
+        </p>
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="container-fluid gx-0">
+        <div class="footer-rights">
+          <p class="rights-para">Copyright @ Traverse.All Rights Reserved </p>
+        </div>
+
+
+      </div>
+    </footer>
+   </div>
+  </body>
+</html>
